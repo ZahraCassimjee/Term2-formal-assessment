@@ -1,6 +1,6 @@
-let allStudents = [];
+let newCandidates = [];
 
-addStudent = () => {
+addCandidate = () => {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let number = +document.getElementById("number").value;
@@ -10,24 +10,16 @@ addStudent = () => {
 
   if (!checkbox) {
     alert(
-      "Well, well, well... why don't you want to sign up for our newsletter... you don't seem to be that interested, " +
-      name +
-      "! If you want to sign up, you better CHECK that newsletter box!"
+      "Well, well, well... why don't you want to sign up for our newsletter... you don't seem to be that interested, " + name + "! If you want to sign up, you better CHECK that newsletter box!"
     );
   } else {
     alert(
-      "Welcome " +
-      name +
-      "! Thank you for your interest in " +
-      subject +
-      "! We will contact you via the email provided: " +
-      email +
-      ", or alternatively on the phone number: " +
-      number
+      "Welcome " + name +"! Thank you for your interest in " + subject +"! We will contact you via the email provided: " + email +", or alternatively on the phone number: " +  number
     );
 
 
-    allStudents.push({
+    newCandidates.push({
+
       fullName: name,
       emailAd: email,
       contact: number,
@@ -43,6 +35,6 @@ addStudent = () => {
       password: pass,
     });
 
-    document.getElementById("studentForm").reset();
+    document.getElementById("registerForm").reset();
   }
 }
