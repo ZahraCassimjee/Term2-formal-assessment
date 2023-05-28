@@ -11,31 +11,38 @@ addStudent = () => {
   if (!checkbox) {
     alert(
       "Well, well, well... why don't you want to sign up for our newsletter... you don't seem to be that interested, " +
-        name +
-        "! If you want to sign up, you better CHECK that newsletter box!"
+      name +
+      "! If you want to sign up, you better CHECK that newsletter box!"
     );
   } else {
     alert(
       "Welcome " +
-        name +
-        "! Thank you for your interest in " +
-        subject +
-        "! We will contact you via the email provided: " +
-        email +
-        ", or alternatively on the phone number: " +
-        number
+      name +
+      "! Thank you for your interest in " +
+      subject +
+      "! We will contact you via the email provided: " +
+      email +
+      ", or alternatively on the phone number: " +
+      number
     );
+
+
+    allStudents.push({
+      fullName: name,
+      emailAd: email,
+      contact: number,
+      studentSubject: subject,
+      password: pass,
+    });
+
+    console.log({
+      fullName: name,
+      emailAd: email,
+      contact: number,
+      studentSubject: subject,
+      password: pass,
+    });
+
+    document.getElementById("studentForm").reset();
   }
-
-  allStudents.push({
-    fullName: name,
-    emailAd: email,
-    contact: number,
-    studentSubject: subject,
-    password: pass,
-  });
-
-  console.log(allStudents);
-
-  document.getElementById("studentForm").reset();
-};
+}

@@ -116,46 +116,46 @@
 
     <div class="row">
         <div class="col-6">
-            <form style="margin-top: 50px;">
-                <h3>Sign Up</h3>
-                <p>If you would like to resister for one of our courses, use the form below</p>
-                
-                <div class="form-group">
-                  
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name & Surname">
-                     </div>
+          <form id="studentForm" onsubmit="return false" style="margin-top: 50px;">
+            <h3>Sign Up</h3>
+            <p>If you would like to resister for one of our courses, use the form below</p>
+            
+            <div class="form-group">
+              
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name & Surname">
+                 </div>
 
-                <div class="form-group">
-                  
-                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                   </div>
-                
-                <div class="form-group">
-                  
-                  <input type="number" class="form-control" id="number" aria-describedby="emailHelp" placeholder="Contact Number">
-                  </div>
+            <div class="form-group">
+              
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+               </div>
+            
+            <div class="form-group">
+              
+              <input type="number" class="form-control" id="number" aria-describedby="emailHelp" placeholder="Contact Number">
+              </div>
 
-                  <div class="form-group">
-                    <select class="form-control" id="subject">
-                      <option>Select a subject</option>
-                      <option>UX Design</option>
-                      <option>Development</option>
-                      <option>Product Design</option>
-                      
-                    </select>
-                  </div>
+              <div class="form-group">
+                <select class="form-control" id="subject">
+                  <option>Select a subject</option>
+                  <option>UX Design</option>
+                  <option>Development</option>
+                  <option>Product Design</option>
+                  
+                </select>
+              </div>
 
-                <div class="form-group">
-                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input"  id="checkbox">
-                  <label class="form-check-label" for="exampleCheck1">Send me Spam Newsletters</label>
-                </div>
+            <div class="form-group">
+               <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input"  id="checkbox">
+              <label class="form-check-label" for="exampleCheck1">Send me Spam Newsletters</label>
+            </div>
 <br>
-                <button type="submit" class="btn btn-primary" onclick="addStudent()">Register Account</button>
-              </form>
+            <button type="submit" class="btn btn-primary" onclick="addStudent();">Register Account</button>
+          </form>
         </div>
 
 
